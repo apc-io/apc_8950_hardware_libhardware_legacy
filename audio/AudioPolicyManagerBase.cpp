@@ -1996,12 +1996,12 @@ const AudioPolicyManagerBase::VolumeCurvePoint
 
 const AudioPolicyManagerBase::VolumeCurvePoint
     AudioPolicyManagerBase::sSpeakerMediaVolumeCurve[AudioPolicyManagerBase::VOLCNT] = {
-    {1, -56.0f}, {20, -34.0f}, {60, -11.0f}, {100, 0.0f}
+    {1, -53.0f}, {20, -30.0f}, {60, -10.0f}, {100, 0.0f}
 };
 
 const AudioPolicyManagerBase::VolumeCurvePoint
     AudioPolicyManagerBase::sSpeakerSonificationVolumeCurve[AudioPolicyManagerBase::VOLCNT] = {
-    {1, -29.7f}, {33, -20.1f}, {66, -10.2f}, {100, 0.0f}
+    {1, -29.7f}, {33, -17.1f}, {66, -7.2f}, {100, 0.0f}
 };
 
 

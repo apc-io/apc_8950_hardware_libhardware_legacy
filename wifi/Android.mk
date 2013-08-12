@@ -28,6 +28,13 @@ ifdef WIFI_DRIVER_FW_PATH_PARAM
 LOCAL_CFLAGS += -DWIFI_DRIVER_FW_PATH_PARAM=\"$(WIFI_DRIVER_FW_PATH_PARAM)\"
 endif
 
+LOCAL_C_INCLUDES += \
+	device/wmt/wmid/env/lib \
+	device/wmt/wmid/gpio
+
 LOCAL_SRC_FILES += wifi/wifi.c
 
-LOCAL_SHARED_LIBRARIES += libnetutils
+LOCAL_SHARED_LIBRARIES += \
+	libnetutils \
+	libwmtenv \
+	libwmtgpio
