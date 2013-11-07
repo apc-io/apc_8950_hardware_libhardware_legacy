@@ -1242,6 +1242,9 @@ int wifi_change_fw_path(const char *fwpath)
     int fd;
     int ret = 0;
 
+    // TODO: need a better way to get driver_firmware_path dynamically !
+    return ret;
+
     if (!fwpath)
         return ret;
     fd = open(WIFI_DRIVER_FW_PATH_PARAM, O_WRONLY);
